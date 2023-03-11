@@ -59,54 +59,54 @@ public class AddressBook {
                 System.out.println("---------------------------------------");
                 System.out.println("Enter the number which you want to edit\n1.First Name\n2.Last Name\n3.Address\n4.C\n5.State\n6.Zip\n7.Phone Number\n8.Email");
                 int choice = sc.nextInt();
-                switch (choice) {
+                switch (choice) 
                     case 1:
                         System.out.println("First name:");
-                        Scanner sc = new Scanner(System.in);
-                        contact.firstName = sc.nextLine();
+                        Scanner first = new Scanner(System.in);
+                        contact.firstName = first.nextLine();
                         System.out.println("First name edited succesfully");
                         break;
                     case 2:
                         System.out.println("Last name:");
-                        Scanner scanner = new Scanner(System.in);
-                        contact.lastName = scanner.nextLine();
+                        Scanner last = new Scanner(System.in);
+                        contact.lastName = last.nextLine();
                         System.out.println("Last name edited succesfully");
                         break;
                     case 3:
                         System.out.println("Address:");
-                        Scanner s = new Scanner(System.in);
-                        contact.address = s.nextLine();
+                        Scanner addInput = new Scanner(System.in);
+                        contact.address = addInput.nextLine();
                         System.out.println("Address edited succesfully");
                         break;
 
                     case 4:
                         System.out.println("City:");
-                        Scanner scan = new Scanner(System.in);
-                        contact.city = scan.nextLine();
+                        Scanner cityInput = new Scanner(System.in);
+                        contact.city = cityInput.nextLine();
                         System.out.println("City edited succesfully");
                         break;
                     case 5:
                         System.out.println("State:");
-                        Scanner userInput = new Scanner(System.in);
-                        contact.state = userInput.nextLine();
+                        Scanner stateInput = new Scanner(System.in);
+                        contact.state = stateInput.nextLine();
                         System.out.println("State edited succesfully");
                         break;
                     case 6:
                         System.out.println("Zip:");
-                        Scanner user = new Scanner(System.in);
-                        contact.zip = user.nextLine();
+                        Scanner zipInput = new Scanner(System.in);
+                        contact.zip = zipInput.nextLine();
                         System.out.println("Zip edited succesfully");
                         break;
                     case 7:
                         System.out.println("Phone number:");
-                        Scanner input = new Scanner(System.in);
-                        contact.phoneNumber = input.nextLine();
+                        Scanner inputNum = new Scanner(System.in);
+                        contact.phoneNumber = inputNum.nextLine();
                         System.out.println("Phone Number edited succesfully");
                         break;
                     case 8:
                         System.out.println("Email:");
-                        Scanner in = new Scanner(System.in);
-                        contact.email = in.nextLine();
+                        Scanner inputEmail = new Scanner(System.in);
+                        contact.email = inputEmail.nextLine();
                         System.out.println("Email edited succesfully");
                         break;
                 }
