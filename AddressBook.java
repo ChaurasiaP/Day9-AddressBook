@@ -115,4 +115,23 @@ public class AddressBook {
         if (flag == 0)
             System.out.println("Contact not found!!!");
     }
+
+    public void deleteContact() {
+
+        System.out.println("Enter the contact to delete: ");
+        System.out.println("Enter First Name: ");
+        String fname = sc.nextLine();
+        System.out.println("Enter Last Name:");
+        String lname = sc.nextLine();
+
+        for (int j = 0; j < contactList.size(); j++) {
+            Contact contact = contactList.get(j);
+            if (contact.firstName.equals(fname) && contact.lastName.equals(lname)) {
+                contactList.remove(contact);
+                System.out.println("contact deleted successfully");
+            } else {
+                System.out.println("contact does not exist");
+            }
+        }
+    }
 }
