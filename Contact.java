@@ -1,12 +1,12 @@
 public class Contact {
-    public String firstName;
-    public String lastName;
-    public String phoneNumber;
-    public String address;
-    public String city;
-    public String state;
-    public String zip;
-    public String email;
+    private String firstName;
+    private String lastName;
+    private String phoneNumber;
+    private String address;
+    private String city;
+    private String state;
+    private String zip;
+    private String email;
 
     public String getFirstName() {
         return firstName;

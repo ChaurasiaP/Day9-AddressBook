@@ -9,28 +9,28 @@ public class AddressBook {
     public void addContact() {
 
         System.out.println("First Name :");
-        contact.firstName = sc.nextLine();
+        contact.setFirstName(sc.nextLine());
 
         System.out.println("Last Name :");
-        contact.lastName = sc.nextLine();
+        contact.setLastName(sc.nextLine());
 
         System.out.println("Address :");
-        contact.address = sc.nextLine();
+        contact.setAddress(sc.nextLine());
 
         System.out.println("City :");
-        contact.city = sc.nextLine();
+        contact.setCity(sc.nextLine());
 
         System.out.println("State :");
-        contact.state = sc.nextLine();
+        contact.setState(sc.nextLine());
 
         System.out.println("Zip :");
-        contact.zip = sc.nextLine();
+        contact.setZip(sc.nextLine());
 
         System.out.println("Phone Number :");
-        contact.phoneNumber = sc.nextLine();
+        contact.setPhoneNumber(sc.nextLine());
 
         System.out.println("Email :");
-        contact.email = sc.nextLine();
+        contact.setEmail(sc.nextLine());
 
         contactList.add(contact);
     }
